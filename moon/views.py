@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import User, SpecialOffers, GetInTouch, Products, AboutMoon
+
+from moon.models import User, SpecialOffers, GetInTouch, Products, AboutMoon
 
 
 def index(request):

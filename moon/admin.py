@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import User, AboutMoon, Products, SpecialOffers, GetInTouch
+
+from moon.models import User, AboutMoon, Products, SpecialOffers, GetInTouch
 
 
 admin.site.register(AboutMoon)

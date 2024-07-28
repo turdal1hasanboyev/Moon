@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import index
+
+from moon.views import index
 
 
 urlpatterns = [
