@@ -5,9 +5,10 @@ from moon.models import User, SpecialOffers, GetInTouch, Products, AboutMoon
 
 def index(request):
     user = User.objects.get(id=1)
+    about_moon = AboutMoon.objects.get(id=1)
+
     special_offers = SpecialOffers.objects.all().order_by('id')[:3]
     products = Products.objects.all().order_by('id')[:5]
-    about_moon = AboutMoon.objects.get(id=1)
 
     if request.method == "POST":
         name = request.POST.get("name")
